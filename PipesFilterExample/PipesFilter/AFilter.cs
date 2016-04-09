@@ -9,7 +9,7 @@ namespace PipesFilter
     /// <summary>
     /// Filter abstract class for implementation.
     /// </summary>
-    abstract class AFilter
+    public abstract class AFilter
     {
         /// <summary>
         /// Defines if the Filter is running.
