@@ -11,7 +11,7 @@ namespace PipesFilter
     /// Representative interface of a pipe.
     /// </summary>
     /// <typeparam name="T">Type of data.</typeparam>
-    interface IPipe<T>
+    public interface IPipe<T>
     {
         /// <summary>
         /// Adds data to the pipe if possible.

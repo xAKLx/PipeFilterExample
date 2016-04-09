@@ -22,7 +22,7 @@ namespace PipesFilter
             queue = new Queue<T>(this.capacity);
         }
 
-        bool IPipe<T>.AddData(T data)
+        public bool AddData(T data)
         {
             if (queue.Count == capacity)
                 return true;
@@ -38,7 +38,7 @@ namespace PipesFilter
         /// TODO catch exeption.
         /// </summary>
         /// <returns></returns>
-        T IPipe<T>.getData()
+        public T getData()
         {
 
             return queue.Dequeue();
