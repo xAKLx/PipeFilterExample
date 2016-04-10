@@ -71,6 +71,8 @@ namespace PipesFilterExample
                     }
                     while(!pair.Value.AddData(list));
                 }
+                if (ElseOutputPipe != null)
+                    while (!ElseOutputPipe.AddData(data)) ;
             }
             
         }
