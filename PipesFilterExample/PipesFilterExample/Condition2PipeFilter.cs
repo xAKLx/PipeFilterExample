@@ -17,6 +17,7 @@ namespace PipesFilterExample
         public delegate bool ConditionValue(T value);
         private List<KeyValuePair<ConditionValue, IPipe<ICollection<T>>>> condition2Pipe;
         public IPipe<ICollection<T>> Input { get; set; }
+        public IPipe<ICollection<T>> ElseOutputPipe { get; set; }
 
         /// <summary>
         /// Creats the object with an input pipe.
@@ -29,6 +30,7 @@ namespace PipesFilterExample
                 throw new ArgumentNullException("Input pipe can't be null.");
             Input = input;
             condition2Pipe = new List<KeyValuePair<ConditionValue, IPipe<ICollection<T>>>>();
+            ElseOutputPipe = null;
         }
 
         /// <summary>
