@@ -66,9 +66,12 @@ namespace PipesFilterExample
                         if (pair.Key(value))
                         {
                             list.Add(value);
-                            data.Remove(value);
                         }
                     }
+
+                    foreach (var value in list)
+                        data.Remove(value);
+
                     while(!pair.Value.AddData(list));
                 }
                 if (ElseOutputPipe != null)
