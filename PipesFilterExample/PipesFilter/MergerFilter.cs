@@ -46,7 +46,7 @@ namespace PipesFilter
         /// <exception cref="ArgumentNullException.ArgumentNullException">If outputPipe is null.</exception>
         public MergerFilter(IPipe<ICollection<T>> outputPipe)
         {
-            throw new NotImplementedException();
+            OutputPipe = outputPipe;
         }
 
         /// <summary>
