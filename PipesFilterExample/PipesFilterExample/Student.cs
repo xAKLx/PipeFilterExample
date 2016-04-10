@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PipesFilterExample
 {
-    public class Student
+    public class Student: IComparable<Student>
     {
         public String Name { get; set; }
         public uint Matricula { get; set; }
@@ -19,6 +19,11 @@ namespace PipesFilterExample
             Matricula = matricula;
             Age = age;
             IsMale = isMale;
+        }
+
+        public int CompareTo(Student other)
+        {
+            return Matricula.CompareTo(other.Matricula);
         }
     }
 }
