@@ -34,14 +34,16 @@ namespace PipesFilter
                 
         }
 
-        /// <summary>
-        /// TODO catch exeption.
-        /// </summary>
-        /// <returns></returns>
         public T getData()
         {
-
-            return queue.Dequeue();
+            try
+            {
+                return queue.Dequeue();
+            }catch(Exception)
+            {
+                return default(T);
+            }
+            
         }
     }
 }
