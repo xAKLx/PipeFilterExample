@@ -47,6 +47,7 @@ namespace PipesFilter
         public MergerFilter(IPipe<ICollection<T>> outputPipe)
         {
             OutputPipe = outputPipe;
+            inputPipes = new List<IPipe<ICollection<T>>>();
         }
 
         /// <summary>

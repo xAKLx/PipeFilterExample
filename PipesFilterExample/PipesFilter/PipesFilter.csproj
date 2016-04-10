@@ -41,8 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AFilter.cs" />
-    <Compile Include="GarbagePipeConcept.cs" />
+    <Compile Include="GarbagePipe.cs" />
     <Compile Include="IPipe.cs" />
+    <Compile Include="MergerFilter.cs" />
     <Compile Include="Pipe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
