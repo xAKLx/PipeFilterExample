@@ -20,9 +20,9 @@ namespace PipesFilterExample
         public IPipe<ICollection<T>> ElseOutputPipe { get; set; }
 
         /// <summary>
-        /// Creats the object with an input pipe.
+        /// Creates the object with an input pipe.
         /// </summary>
-        /// <param name="input">Pipe de entrada de informacion, no puede ser null.</param>
+        /// <param name="input">Input Pipe, can't be null.</param>
         /// <exception cref="ArgumentNullException.ArgumentNullException">Si input es null.</exception>
         public Condition2PipeFilter(IPipe<ICollection<T>> input)
         {
