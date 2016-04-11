@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PipesFilterExample
+namespace PipesFilter
 {
     /// <summary>
     /// Filter that receives a list of T, sort it and send it through an output pipe.

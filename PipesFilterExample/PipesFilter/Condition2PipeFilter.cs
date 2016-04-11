@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PipesFilterExample
+namespace PipesFilter
 {
     /// <summary>
     /// Split a list of T and send it through a specific pipe per condition.

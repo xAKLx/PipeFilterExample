@@ -41,11 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AFilter.cs" />
+    <Compile Include="Condition2PipeFilter.cs" />
     <Compile Include="GarbagePipe.cs" />
     <Compile Include="IPipe.cs" />
     <Compile Include="MergerFilter.cs" />
     <Compile Include="Pipe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SortFilter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
