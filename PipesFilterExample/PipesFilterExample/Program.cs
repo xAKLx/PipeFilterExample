@@ -10,7 +10,7 @@ namespace PipesFilterExample
 {
     class Program
     {
-        static HashSet<Thread> threads;
+        static HashSet<Thread> threads = new HashSet<Thread>();
 
         static bool IsMale(Student target)
         {
