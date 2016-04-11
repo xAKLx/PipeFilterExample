@@ -10,6 +10,8 @@ namespace PipesFilterExample
 {
     class Program
     {
+        static HashSet<Thread> threads;
+
         static bool IsMale(Student target)
         {
             return target.IsMale;
@@ -22,8 +24,9 @@ namespace PipesFilterExample
 
         static void RunFilter(AFilter filter)
         {
-            new Thread(new ThreadStart(filter.Run)).Start();
-
+            Thread oThread = new Thread(new ThreadStart(filter.Run));
+            threads.Add(oThread);
+            oThread.Start();
         }
 
         static void Main(string[] args)
@@ -83,6 +86,11 @@ namespace PipesFilterExample
 
                 Console.WriteLine(toConsole);
             }
+
+            foreach (var trd in threads)
+                trd.Join();
+
+           
         }
     }
 }
